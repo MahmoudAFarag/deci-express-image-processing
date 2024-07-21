@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Image Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Recipe Image Manager</h1>
+    <div id="uploadSection">
+      <h2>Upload a New Recipe Image</h2>
+      <input type="file" id="imageUpload" accept="image/jpeg" />
+      <button onclick="uploadImage()">Upload</button>
+    </div>
+    <div id="resizeSection">
+      <h2>Resize an Image</h2>
+      <div id="imageGallery"></div>
+      <input type="number" id="widthInput" placeholder="Width" />
+      <input type="number" id="heightInput" placeholder="Height" />
+      <button onclick="resizeImage()">Resize</button>
+    </div>
+    <div id="resizedImageUrl"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

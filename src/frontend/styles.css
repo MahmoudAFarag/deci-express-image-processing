@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+#uploadSection,
+#resizeSection {
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  margin: 5px 0;
+}
+
+#imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#imageGallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#imageGallery img.selected {
+  border: 2px solid blue;
+}
